@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.tabs button {
+  width: 200px;
+  height: 40px;
+  top: 54px;
+  left: 50px;
+  /* margin: 0 10px; */
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #f5f5fa;
+  color: rgb(15, 15, 15);
+  border-radius: 4px;
+}
+
+.tabs button.active {
+  background-color: #08090a;
+  color: white;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  /* background: #fff; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  padding: 2px; 
+  /* width: 250px; */
+  text-align: center;
+  position: relative;
+}
+
+.product-card img {
+  width: 188px;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.product-card h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.product-card button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #050505;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #FFFFFF;
+  color: #0c0b0b;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .product-card {
+      width: 100%;
+  }
+}
+h1{
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgb(146, 140, 140);
+  font-weight: bolder;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-card {
+      width: 45%;
+  }
+}
+.product-card s {
+  color: #888; /* Grey color for the compare price */
+}
+button{
+  width: 188px;
+  height: 40px;
+}
